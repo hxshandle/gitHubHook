@@ -1,8 +1,8 @@
 {
-  " gitHubHook":{
+  "gitHubHook":{
     "optDir":"/home/handle/git/gitHubHook"
   },
-  " gufang":{
+  "gufang":{
     "optDir":"/home/handle/git/codeRepo/sites/gufang"
   }
 }
