@@ -17,7 +17,7 @@ exports.gitHubHook = function (req, res) {
     var cfg = JSON.parse(data);
     console.log('config data :' + data);
     console.log('working dir :' +cfg[repoName]['optDir']);
-    exec('git status', {cwd: cfg[repoName]['optDir']}, function (error, stdout, stderr) {
+    exec('git pull', {cwd: cfg[repoName]['optDir']}, function (error, stdout, stderr) {
       console.log('stderr: ' + stderr);
       if (error !== null) {
         console.log('exec error: ' + error);
